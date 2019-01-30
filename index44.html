@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head> </head>
+	<body>
+			<script>
+				function calcD(a, b, c) {
+			return b * b - 4 * a * c;
+			}
+			do{
+			var a = parseFloat(prompt('Введите число a: '));
+				if (isNaN(a))
+					alert('Некорректно! Повторите.');
+			}
+			while (isNaN(a));
+			
+			do{
+			var b = parseFloat(prompt('Введите число b: '));
+				if (isNaN(b))
+				alert('Некорректно! Повторите.');
+				}
+			while (isNaN(b));
+			
+			do{
+			var c = parseFloat(prompt('Введите число c: '));
+				if (isNaN(c))
+				alert('Некорректно! Повторите.');
+				}
+			while (isNaN(c));
+			
+			var discriminant = calcD(a, b, c);
+			alert('D='+discriminant);
+			
+			
+	</script>
+		
+	</body>
+</html>
