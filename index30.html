@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -6,26 +6,40 @@
 	</head>
 	<body>
 		<script>
-			do{
-			var x = parseFloat(prompt('Введите число x: '));
-				if (isNaN(x))
-				{alert('Некорректное число! Повторите.');}}
-			while (isNaN(x));
+			  while(true)
+            {
+                var x = prompt('Введите число x:').replace(/,/g, '.');
+                if (/^-?\d*[.]?\d*$/.test(x))
+                    break;
+                else
+                    alert('Некорректное значение!');
+            }
 			
-			do{
-			var y = parseFloat(prompt('Введите число y: '));
-				if (isNaN(y)){
-				alert('Некорректное число! Повторите.');}}
-			while (isNaN(y));
+			while(true)
+            {
+                var y = prompt('Введите число x:').replace(/,/g, '.');
+                if (/^-?\d*[.]?\d*$/.test(y))
+                    break;
+                else
+                    alert('Некорректное значение!');
+            }
 			
+			
+					
+						
 			var res = Math.pow(x, y);
-
+			
 			switch(isNaN(res) || res){
+						
 			case true:
 			alert('Получено комплексное число');
-			break;
+			break;	
+			
 			case Infinity:
-			alert('Ноль нельзя возводить в отрицательную спепень!');
+			if (x==0)
+			alert('Нельзя 0 возводить в отрицательную степень!');
+			else
+			alert('Комбинация невыполнима! Очень большое или очень малое число!');
 			break;
 			default:
 			alert('Число ' + x + ' в степени ' + y + ' равно ' + res);
