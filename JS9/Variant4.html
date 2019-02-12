@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#b1").click(function(){
+					$("p[align='center']").hide();
+				});
+				$("#b2").click(function(){
+					$("p[align='center']").show();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button id = "b1"> Скрыть элементы с align=center</button>
+		<button id = "b2">Открыть элементы с align=center</button>
+		<p align="left" style="width: 1000px;">Здесь align=left</p>
+		<p align="center" style="width: 1000px;">Здесь align=center</p>
+		<p align="right" style="width: 1000px;">Здесь align=right</p>
+	</body>
+</html>
