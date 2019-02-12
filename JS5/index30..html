@@ -1,0 +1,49 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Пример 30</title>
+	</head>
+	<body>
+		<script>
+			  while(true)
+            {
+                var x = prompt('Введите число x:').replace(/,/g, '.');
+                if (/^-?\d*[.]?\d*$/.test(x))
+                    break;
+                else
+                    alert('Некорректное значение!');
+            }
+			
+			while(true)
+            {
+                var y = prompt('Введите число x:').replace(/,/g, '.');
+                if (/^-?\d*[.]?\d*$/.test(y))
+                    break;
+                else
+                    alert('Некорректное значение!');
+            }
+			
+			
+					
+						
+			var res = Math.pow(x, y);
+			
+			switch(isNaN(res) || res){
+						
+			case true:
+			alert('Получено комплексное число');
+			break;	
+			
+			case Infinity:
+			if (x==0)
+			alert('Нельзя 0 возводить в отрицательную степень!');
+			else
+			alert('Комбинация невыполнима! Очень большое или очень малое число!');
+			break;
+			default:
+			alert('Число ' + x + ' в степени ' + y + ' равно ' + res);
+			}
+		</script>
+	</body>
+</html>
