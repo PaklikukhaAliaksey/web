@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Самостоятельная работа</title>
+				<script>
+					function open1()
+					{
+						var OpenWindow = window.open('', 'newwin', config = 'height = 300, width = 500, toolbar= yes, menubar = yes');
+						OpenWindow.document.write("<html>");
+						OpenWindow.document.write("<title>Новое окно</title>");
+						OpenWindow.document.write("<body bgcolor = '#ADD8E6'>");
+						OpenWindow.document.write("<center>");
+						OpenWindow.document.write("<font size = +3>Наше новое окно<font><p>");
+						OpenWindow.document.write("<a href = 'http://www.intuit.ru' target = 'main'>Эта ссылка<br>ведет на intuit.ru</a></p>");
+						OpenWindow.document.write("<p><hr width = '60%'><p>");
+						OpenWindow.document.write("<a href = 'http://izi.vlsu.ru' target = 'main'>Эта ссылка<br>ведет на izi.vlsu.ru</a></p>");
+						OpenWindow.document.write("<p><hr width = '60%'><p>");
+						OpenWindow.document.write("<a href = '' onClick = 'self.close()'>Эта ссылка закроет окно</a></p>");
+						OpenWindow.document.write("</center>");
+						OpenWindow.document.write("</html>");
+					}
+				</script>
+	</head>
+	<body>
+		<button onclick = "open1()">Запуск страницы в новом окне</button>
+	</body>
+</html>
