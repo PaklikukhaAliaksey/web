@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Пример 31</title>
+	</head>
+	<body>
+		<script>
+			do{
+			var n = parseInt(prompt('Введите целое положительное число n: '));
+				if (isNaN(n) || n < 0)
+				{alert('Некорректное число! Ведите целое положительное число.');}
+				if (n > 10000000)
+				{alert('Слишком большое число, будет долго считать! Повторите ввод.');}}
+			while (isNaN(n) || n < 0 || n > 10000000);
+			
+			var z = 1; //z хранит результат !
+			if(n > 1){
+				var i = 2;
+				do{
+					z = z * i;
+					i++;
+				}
+				while(i <= +n)
+			}
+			
+			if (z == Infinity)
+			alert('Слишком большое число!');
+			else
+			alert('Факториал числа ' + n + ' равен ' + z);
+		</script>
+	</body>
+</html>
