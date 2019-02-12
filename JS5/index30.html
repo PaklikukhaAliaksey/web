@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>index30</title>
+</head>
+
+<body>
+    <script>
+        for (var i = 0;;) {
+            var x = prompt('Введите число x:', '');
+            x = parseFloat(x);
+            if (isNaN(x)) alert('Похоже, это не число... повторите попытку ввода!');
+            else break;
+        }
+        for (var i = 0;;) {
+            var y = prompt('Введите число y:', '');
+            y = parseFloat(y);
+            if (isNaN(y)) alert('Похоже, это не число... повторите попытку ввода!');
+            else break;
+        }
+        var res = Math.pow(x, y);
+        if (res !== res) alert('Не удалось возвести в степень!');
+        else if ((res == Infinity) || (res == -Infinity)) alert('Введённое Вами значение слишком мало либо велико!');
+        else
+            alert('Число ' + x + ' в степени ' + y + ' равно ' + res);
+    </script>
+</body>
+
+</html>
