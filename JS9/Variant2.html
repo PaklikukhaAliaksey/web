@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#but1").click(function () {
+                $("tr:nth-of-type(2n)").hide();
+            });
+            $("#but2").click(function () {
+                $("tr:nth-of-type(2n)").show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2>Кнопки для отображения и скрытия четных строк</h2>
+    <button id="but1">Скрыть четные строки</button>
+    <button id="but2">Открыть четные строки</button>
+    <br>
+    <br>
+    <table >
+        <tr>
+            <td>Строка №1</td>
+        </tr>
+        <tr>
+            <td>Строка №2</td>
+        </tr>
+        <tr>
+            <td>Строка №3</td>
+        </tr>
+        <tr>
+            <td>Строка №4</td>
+        </tr>
+        <tr>
+            <td>Строка №5</td>
+        </tr>
+        <tr>
+            <td>Строка №6</td>
+        </tr>
+        <tr>
+            <td>Строка №7</td>
+        </tr>
+        <tr>
+            <td>Строка №8</td>
+        </tr>
+       
+    </table>
+</body>
+
+</html>
